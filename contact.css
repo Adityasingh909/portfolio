@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    /* background-color: rgba(143, 63, 196, 0.493); */
+    background-color: rgba(166, 188, 236, 0.815);
+    width: 100vw;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0px;
+    box-shadow: -3px -8px 20px 7px rgba(255, 255, 255, 0.493);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.name {
+    padding-left: 10vw;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pages_names ul {
+    padding-left: 26vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row
+    
+}
+
+.pages_names li {
+    padding-right: 2vw;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+li a{
+
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    font-size: 16px;
+    color: blue;
+}
+.color{
+    color: blue;
+}
+
+
+.container2{
+     width: 100vw;
+    height: 90vh;
+     /* background-image: url('bg2.jpg'); */
+    /* background: linear-gradient(to bottom, #84a9ff, #f5f8ff); */
+    background: linear-gradient(to top , #824fe0, rgba(74, 111, 165, 0.575));
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+.contact h1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    margin: 70px;
+    margin-top: 30px;
+}
+.box1{
+    width: 600px;
+    margin-right: 140px;
+}
+
+div h2{
+    padding-bottom: 30px;
+    color: white;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div p{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.f{
+    display: flex;
+    flex-direction: row;
+
+}
+.logo i{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-right:10px ;
+
+}
+
+.email,.Phone, .Linkedln,.GitHub{
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.527);
+}
+a{
+    text-decoration: none;
+}
+a:hover .logo i{
+    font-size: 33px;
+    width: 53px;
+    height: 53px;
+}
+a:hover .email{
+    color: rgba(255, 255, 255, 0.986);
+}
+a:hover .Phone{
+    color: rgba(255, 255, 255, 0.986);
+}
+a:hover .Linkedln{
+    color: rgba(255, 255, 255, 0.986);
+}
+a:hover .GitHub{
+    color: rgba(255, 255, 255, 0.986);
+}
+.padding{
+    margin-bottom: 5px;
+}
+
+
+.border{
+    background-color: rgba(137, 43, 226, 0.555);
+    height: 390px;
+    width: 380px;
+    border-radius: 10px;
+}
+
+.namebox, .emailbox,.msg, .sbt{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.border{
+    padding: 30px;
+    padding-top: 40px;
+}
+.b{
+    height: 40px;
+    border: 0px;
+    border-radius: 7px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: rgb(235, 231, 227);
+}
+.b2{
+    height: 100px;
+    border: 0px;
+    border-radius: 7px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: rgb(235, 231, 227);
+    resize: none;
+}
+.sbt button{
+    height: 50px;
+    border: 0px;
+    border-radius: 7px;
+    background-image: linear-gradient(to right,blue,rgb(166, 159, 204));
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.sbt button:hover{
+    height: 52px;
+   font-size: 16px;
+}
