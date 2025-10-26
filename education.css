@@ -65,7 +65,7 @@ li a:hover{
     height: 90vh;
      /* background-image: url('bg2.jpg'); */
     /* background: linear-gradient(to bottom, #84a9ff, #f5f8ff); */
-    background: linear-gradient(to top , #592ee6bd, #5f88d3c9);
+    background: linear-gradient(to top , #592ee693, #5f88d3c9);
      background-repeat: no-repeat;
      background-size: cover;
      font-family: Arial, Helvetica, sans-serif;
@@ -93,7 +93,7 @@ li a:hover{
     width: 800px;
     padding: 30px;
     margin-left: 20%;
-    background-color: #592ee63f;
+    background-color: #592ee621;
     display: flex;
     flex-direction: row;
 }

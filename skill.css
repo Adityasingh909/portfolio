@@ -84,12 +84,12 @@ li a:hover{
     display: flex;
     justify-content: center;
     font-size: 17px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .box{
-    background-color: #824fe0;
+    background-color: #824fe075;
     width: 150px;
     height: 110px;
     display: flex;
@@ -137,8 +137,8 @@ li a:hover{
 }
 .box:hover{
     background-color: #824fe0;
-    width: 153px;
-    height: 113px;
+    width: 151px;
+    height: 111px;
     display: flex;
     flex-direction: column;
     justify-content: center;

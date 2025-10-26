@@ -76,9 +76,10 @@ li a:hover{
 .contact h1{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 
