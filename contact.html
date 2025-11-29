@@ -16,7 +16,7 @@
             <div class="name "><span class="color">Aditya</span> Singh</div>
             <div class="pages_names">
                 <ul>
-                      <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="About_me.html">About me</a></li>
                     <li><a href="education.html">Education</a></li>
                     <li><a href="skill.html">Skills</a></li>
@@ -94,32 +94,34 @@
                     </div>
                 </div>
                 <div class="box2">
-                    <form submit="#">
-                    <div class="border">
-                        <div class="inside">
-                            <div class="namebox">
-                                <label id="user">Name</label>
-                                <input for="user" class="b" type="input" placeholder="Enter your name">
+                    <form action="https://formspree.io/f/xeobbqbn" method="POST">
+                        <div class="border">
+                            <div class="inside">
 
-                            </div>
-                            <div class="emailbox">
-                                <label id="user">Email</label>
-                                <input for="user" class="b" type="email" placeholder="Enter your Email">
+                                <div class="namebox">
+                                    <label>Name</label>
+                                    <input name="name" class="b" type="text" placeholder="Enter your name" required>
+                                </div>
 
-                            </div>
-                            <div class="msg">
-                                <label id="user">Message</label>
-                                <textarea for="user" class="b2" placeholder="Enter your message..."></textarea>
+                                <div class="emailbox">
+                                    <label>Email</label>
+                                    <input name="email" class="b" type="email" placeholder="Enter your Email" required>
+                                </div>
 
+                                <div class="msg">
+                                    <label>Message</label>
+                                    <textarea name="message" class="b2" placeholder="Enter your message..."
+                                        required></textarea>
+                                </div>
 
-                            </div>
-                            <div class="sbt">
-                                <button>Send Message</button>
+                                <div class="sbt">
+                                    <button type="submit">Send Message</button>
+                                </div>
 
                             </div>
                         </div>
-                    </div>
                     </form>
+
                 </div>
             </div>
 
