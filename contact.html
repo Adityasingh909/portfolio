@@ -100,17 +100,17 @@
 
                                 <div class="namebox">
                                     <label>Name</label>
-                                    <input name="name" class="b" type="text" placeholder="Enter your name" required>
+                                    <input name="name" id = "name" class="b" type="text" placeholder="Enter your name" required>
                                 </div>
 
                                 <div class="emailbox">
                                     <label>Email</label>
-                                    <input name="email" class="b" type="email" placeholder="Enter your Email" required>
+                                    <input name="email"  id = "mail" class="b" type="email" placeholder="Enter your Email" required>
                                 </div>
 
                                 <div class="msg">
                                     <label>Message</label>
-                                    <textarea name="message" class="b2" placeholder="Enter your message..."
+                                    <textarea name="message" id = "msg" class="b2" placeholder="Enter your message..."
                                         required></textarea>
                                 </div>
 
@@ -126,6 +126,23 @@
             </div>
 
         </div>
+
+        <script>
+            function data(){
+
+                var a = document.getElementById("name").value;
+                var b = document.getElementById("mail").value;
+                var c = document.getElementById("msg").value;
+                
+                if(a===""|| b==="" || c === ""){
+                    alert("All field are required");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
     </main>
 
 </body>
