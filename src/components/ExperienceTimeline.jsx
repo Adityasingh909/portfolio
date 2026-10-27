@@ -14,11 +14,11 @@ export default function ExperienceTimeline() {
       badge: 'PRODUCTION & LMS',
       icon: Rocket,
       points: [
-        'Architected CampusHub LMS with PostgreSQL, Prisma ORM, Node.js/Express REST APIs, and React student workflows.',
+        'Architected & deployed CampusHub LMS on Vercel & Render with Neon PostgreSQL, Prisma ORM, Cloudflare R2 presigned storage, and role-based student/teacher workflows.',
         'Engineered Taskly full-stack MERN productivity app with JWT authentication, deployed live to Netlify and Render.',
         'Continuous practice in C++ and solving Data Structures and Algorithms problems on LeetCode.',
       ],
-      stack: ['PostgreSQL', 'Prisma ORM', 'Node.js', 'Express', 'React', 'MongoDB', 'JWT'],
+      stack: ['PostgreSQL', 'Prisma ORM', 'Cloudflare R2', 'Node.js', 'Express', 'React 19', 'Tailwind v4', 'MongoDB', 'JWT'],
     },
     {
       year: '2025 – 2029',

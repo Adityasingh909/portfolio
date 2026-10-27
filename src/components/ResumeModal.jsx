@@ -177,13 +177,13 @@ export default function ResumeModal({ onClose }) {
                 <span className="font-mono text-zinc-700">2026</span>
               </div>
               <div className="text-indigo-700 font-mono text-[11px] mb-1">
-                React.js, Node.js, Express.js, PostgreSQL, Prisma ORM, Tailwind CSS
+                React 19, Node.js 26, Express.js 5, PostgreSQL (Neon), Prisma ORM 6, Cloudflare R2, Tailwind CSS v4
               </div>
               <ul className="list-disc list-inside text-zinc-700 space-y-1">
-                <li>Developing a full-stack LMS with separate student and teacher workflows.</li>
-                <li>Building course listings, course details, assignments, quiz attempts, and submission workflows.</li>
-                <li>Implementing REST API endpoints, authentication middleware, and Prisma relational database models.</li>
-                <li>Creating responsive user interfaces using React and Tailwind CSS.</li>
+                <li>Architected and deployed production full-stack LMS on Vercel and Render with Neon PostgreSQL and Cloudflare R2 object storage.</li>
+                <li>Engineered role-based student and teacher portals for course enrollments, timed quiz assessments with automated grading, and assignment evaluations.</li>
+                <li>Integrated Cloudflare R2 private bucket with 60-second presigned URLs and compensating transaction rollbacks preventing orphan blobs.</li>
+                <li>Designed 13 relational Prisma models with 12 applied migrations and implemented stateless JWT authentication with bcrypt hashing.</li>
               </ul>
             </div>
 

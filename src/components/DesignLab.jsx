@@ -107,22 +107,25 @@ Status: Problem-solving active on LeetCode & competitive tracks.
       output:
 `// CampusHub LMS Prisma Schema Extract
 model User {
-  id           String       @id @default(uuid())
-  email        String       @unique
-  role         Role         @default(STUDENT)
-  enrollments  Enrollment[]
-  submissions  Submission[]
+  id            Int                    @id @default(autoincrement())
+  email         String                 @unique
+  role          String                 @default("STUDENT")
+  coursesTaught Course[]               @relation("TeacherCourses")
+  enrollments   Enrollment[]
+  submissions   AssignmentSubmission[]
+  quizAttempts  QuizAttempt[]
 }
 
-model Course {
-  id           String       @id @default(uuid())
-  title        String
-  code         String       @unique
-  modules      Module[]
-  assignments  Assignment[]
+model Quiz {
+  id              Int            @id @default(autoincrement())
+  courseId        Int
+  durationMinutes Int            @default(30)
+  status          String         @default("DRAFT")
+  questions       QuizQuestion[]
+  attempts        QuizAttempt[]
 }
 
-Status: Verified relational models for CampusHub full-stack LMS.`,
+Status: Verified 13 relational models & 12 migrations for CampusHub LMS.`,
     },
     {
       cmd: 'system --status',
@@ -130,10 +133,11 @@ Status: Verified relational models for CampusHub full-stack LMS.`,
       output:
 `[SYSTEM HEALTH CHECK]
 --------------------------------------------------------
+[✓] CampusHub Web:     https://campus-hub-delta-sooty.vercel.app (200 OK)
+[✓] CampusHub Repo:    https://github.com/Adityasingh909/CampusHub (Active)
 [✓] Taskly Frontend:   https://stalwart-churros-92fd3a.netlify.app (200 OK)
 [✓] Taskly API:        https://taskly-backend-g6in.onrender.com (200 OK)
 [✓] Weather App:       https://adityasingh909.github.io/weather-App/ (200 OK)
-[✓] CampusHub Repo:    https://github.com/Adityasingh909/CampusHub (Active)
 All production endpoints operational.`,
     },
   ];

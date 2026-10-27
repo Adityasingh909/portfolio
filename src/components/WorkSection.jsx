@@ -184,50 +184,66 @@ export default function WorkSection({ onSelectProject }) {
     {
       id: 'campushub-lms',
       title: 'CAMPUSHUB',
-      subtitle: 'Learning Management System & Academic Workflow Engine',
-      type: 'Full-Stack Web Platform',
+      subtitle: 'Full-Stack University LMS & Academic Assessment Engine',
+      type: 'Production Full-Stack Platform',
       year: '2026',
-      statusBadge: 'IN ACTIVE DEVELOPMENT',
-      isLive: false,
+      statusBadge: 'DEPLOYED & LIVE',
+      isLive: true,
       summary:
-        'A full-stack LMS engineered to unify student learning, course syllabi, assignments, and quizzes. Architected with separate student and teacher workflows, PostgreSQL relational schemas, and responsive React interfaces.',
+        'A production-grade, full-stack Learning Management System engineered to streamline university academic workflows. Deployed on Vercel and Render, featuring role-based student and teacher portals, timed quiz assessments with automated scoring, assignment grading with feedback, and zero-egress private cloud storage on Cloudflare R2.',
       metrics: [
-        { val: '7+ Models', label: 'PRISMA SCHEMA' },
-        { val: '5 Flows', label: 'CORE MODULES' },
-        { val: 'REST API', label: 'EXPRESS BACKEND' },
+        { val: '13 Models', label: 'PRISMA 6 POSTGRES' },
+        { val: '60s Presign', label: 'CLOUDFLARE R2 VAULT' },
+        { val: 'Vercel+Render', label: 'EDGE + REST CLOUD' },
       ],
-      tags: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'Tailwind CSS'],
+      tags: ['React 19', 'Express 5', 'PostgreSQL (Neon)', 'Prisma 6', 'Cloudflare R2', 'Tailwind v4', 'Vercel', 'Render'],
       accentColor: '#6366f1',
       previewBg: 'linear-gradient(135deg, #0d0f18 0%, #151829 100%)',
-      previewHeader: 'CAMPUSHUB // STUDENT_DASHBOARD',
+      previewHeader: 'CAMPUSHUB // PRODUCTION_PORTAL',
       previewCategory: 'RELATIONAL ARCHITECTURE',
       githubUrl: 'https://github.com/Adityasingh909/CampusHub',
-      liveUrl: null,
+      liveUrl: 'https://campus-hub-delta-sooty.vercel.app',
       details: {
-        category: 'Full-Stack Web Application',
-        role: 'Full-Stack Developer & Database Architect',
-        timeline: '2026 (Active Development)',
-        technologies: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'Tailwind CSS v4', 'Vite'],
+        category: 'Full-Stack Web Application (Production)',
+        role: 'Full-Stack Architect & Backend Engineer (Solo Project)',
+        timeline: '2026 (Live in Production)',
+        technologies: [
+          'React 19',
+          'Vite 8',
+          'Tailwind CSS v4',
+          'Node.js 26',
+          'Express 5',
+          'PostgreSQL (Neon)',
+          'Prisma ORM 6',
+          'Cloudflare R2',
+          'AWS S3 SDK v3',
+          'JWT',
+          'Bcrypt',
+          'Vercel',
+          'Render',
+        ],
         overview:
-          'CampusHub is an educational management platform built to simplify academic administration for students and faculty. The project solves the fragmentation of course materials, assignment submissions, and quiz evaluation into one clean, responsive interface.',
+          'CampusHub is an educational management platform built to simplify academic administration for students and faculty. It unifies course catalogs, syllabus inspection, deadline-aware assignment submissions, timed assessments, and private cloud document storage into one cohesive, high-performance platform.',
         problem:
-          'Existing university portals often feature dated user interfaces, confusing navigation for lecture materials, and disjointed submission workflows that frustrate students and instructors.',
+          'University LMS platforms often suffer from disjointed user interfaces, brittle submission flows, expensive egress fees for file attachments, and concurrency race conditions during timed exams.',
         solution:
-          'Engineered a centralized student portal that manages course enrollments, module navigation, deadline alerts, interactive multiple-choice quizzes, and academic resource uploads with local and relational persistence.',
+          'Architected a decoupled system with React 19 on Vercel Edge and Express 5 on Render. Integrated Neon Serverless PostgreSQL with 13 relational models and Cloudflare R2 for zero-egress object storage with 60-second presigned URLs. Solved distributed file upload consistency via the Compensating Transaction (Saga) pattern and locked down concurrent quiz attempts with idempotent endpoints.',
         keyFeatures: [
-          'Student Dashboard: Real-time overview of enrolled courses, upcoming assignment deadlines, and academic announcements.',
-          'Course Navigation: Structured modules containing lecture notes, references, and downloadable assets.',
-          'Assignment Submissions: Dynamic listing of coursework with status indicators (Pending, Submitted, Graded) and file upload flows.',
-          'Quiz Engine: Multiple-choice quiz attempts with progress tracking and instant score computation.',
-          'Prisma Relational Models: Database entities for User, Course, Module, Assignment, Submission, Quiz, and QuizAttempt.',
+          'Role-Based Academic Portals: Tailored, secure workspaces for Students and Teachers with strict Express RBAC middleware.',
+          'Timed Assessment Engine: Timed multiple-choice quizzes with countdown timer, anti-concurrency locks, and instant score computation.',
+          'Assignment Lifecycle: Deadline management, file attachments, and a dedicated teacher evaluation portal with scoring rubrics and personalized feedback.',
+          'Private Cloud File Vault: User-isolated folders and files integrated directly with Cloudflare R2 and time-limited 60s presigned download URLs.',
+          'Distributed Saga Rollback: Automated compensating deletes that remove orphaned R2 blobs if a subsequent PostgreSQL metadata insert fails.',
+          'Production Database Migrations: 13 strongly-typed models across 12 sequential Prisma migrations with PgBouncer connection pooling on Neon.',
         ],
         architecture: [
-          'Client: React with Vite and Tailwind CSS v4 for fast, responsive rendering.',
-          'Server: Express.js REST API with modular routers and JWT authentication middleware.',
-          'Database: PostgreSQL orchestrated via Prisma ORM for type-safe queries and migrations.',
+          'Client: React 19 SPA bundled with Vite 8 and Tailwind CSS v4, hosted globally on Vercel Edge CDN.',
+          'API Layer: Express 5 REST API on Render container with CORS, 5MB body limits, and stateless JWT authentication.',
+          'Persistence: PostgreSQL on Neon Serverless (AWS us-east-2) connected via Prisma ORM 6 with connection pooling.',
+          'Object Storage: Cloudflare R2 bucket accessed through @aws-sdk/client-s3 with cryptographically signed presigned URLs.',
         ],
         statusNote:
-          'Frontend student portal workflows are currently implemented. Backend API endpoints and PostgreSQL database models are structured and actively being integrated for production deployment.',
+          'Verified live in production. Frontend is deployed on Vercel at campus-hub-delta-sooty.vercel.app with the API on Render and database on Neon.',
       },
       renderPreview: () => (
         <div className="space-y-2.5">
@@ -237,22 +253,22 @@ export default function WorkSection({ onSelectProject }) {
               <div className="hud-label text-[9px] text-accent font-semibold">CS301 · ACTIVE MODULE</div>
               <div className="text-white font-bold text-sm tracking-tight">Data Structures & Algorithms</div>
             </div>
-            <span className="px-2 py-0.5 bg-accent/20 border border-accent/40 text-accent hud-label text-[9px]">
-              85% COMPLETE
+            <span className="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 hud-label text-[9px]">
+              LIVE // VERCEL
             </span>
           </div>
 
           {/* Sub Modules Grid */}
           <div className="grid grid-cols-2 gap-2">
             <div className="bg-black/50 p-2.5 border border-white/10">
-              <div className="hud-label text-[8px] text-white/50">ASSIGNMENT 04</div>
-              <div className="text-white text-xs font-semibold mt-0.5">Binary Trees & Heaps</div>
-              <div className="text-emerald-400 text-[9px] font-mono mt-1">✓ SUBMITTED</div>
+              <div className="hud-label text-[8px] text-white/50">ASSESSMENT ENGINE</div>
+              <div className="text-white text-xs font-semibold mt-0.5">Timed MCQ Quizzes</div>
+              <div className="text-emerald-400 text-[9px] font-mono mt-1">✓ AUTO-GRADED</div>
             </div>
             <div className="bg-black/50 p-2.5 border border-white/10">
-              <div className="hud-label text-[8px] text-white/50">QUIZ 02</div>
-              <div className="text-white text-xs font-semibold mt-0.5">Graph Traversals</div>
-              <div className="text-amber-400 text-[9px] font-mono mt-1">⏱ DUE IN 2 DAYS</div>
+              <div className="hud-label text-[8px] text-white/50">CLOUDFLARE R2</div>
+              <div className="text-white text-xs font-semibold mt-0.5">Private Vault</div>
+              <div className="text-accent text-[9px] font-mono mt-1">🔒 60s PRESIGNED</div>
             </div>
           </div>
         </div>

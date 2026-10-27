@@ -26,10 +26,12 @@ Dark cinematic, experimental developer portfolio engineered with **Next.js 14 (A
 
 ## 🚀 Featured Engineering Showcases
 
-### 1. [CampusHub — Learning Management System](https://github.com/Adityasingh909/CampusHub)
-- **Category:** Full-Stack Academic Management Platform
-- **Stack:** React, Node.js, Express.js, PostgreSQL, Prisma ORM, Tailwind CSS v4
-- **Capabilities:** Student and faculty workflows, course navigation, assignment submissions with deadline tracking, interactive quiz attempt engine, and Prisma relational models.
+### 1. [CampusHub — Learning Management System](https://campus-hub-delta-sooty.vercel.app)
+- **Category:** Production Full-Stack Academic Management Platform
+- **Live URL:** [https://campus-hub-delta-sooty.vercel.app](https://campus-hub-delta-sooty.vercel.app)
+- **Repository:** [CampusHub](https://github.com/Adityasingh909/CampusHub)
+- **Stack:** React 19, Express 5, PostgreSQL (Neon), Prisma ORM 6, Cloudflare R2, Tailwind CSS v4, Vercel, Render
+- **Capabilities:** Role-based student and faculty workflows, course catalog & enrollments, assignment submissions with teacher evaluations, timed quiz engine with automated grading and anti-concurrency locks, and private file vault with Cloudflare R2 presigned URLs.
 
 ### 2. [Taskly — Full-Stack Productivity App](https://stalwart-churros-92fd3a.netlify.app/login)
 - **Category:** Production MERN Application
