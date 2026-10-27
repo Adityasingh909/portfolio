@@ -5,7 +5,9 @@ import React from 'react';
 export default function ClientsMarquee() {
   const stackItems = [
     'POSTGRESQL & PRISMA ORM',
-    'NODE.JS & EXPRESS',
+    'CLOUDFLARE R2 STORAGE',
+    'NODE.JS & EXPRESS 5',
+    'NEON SERVERLESS DB',
     'REACT.JS & VITE',
     'C++ & DATA STRUCTURES',
     'MONGODB & MONGOOSE',

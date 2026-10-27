@@ -255,12 +255,16 @@ export default function Hero({ onOpenResume }) {
                 POSTGRESQL & PRISMA
               </span>
               <span className="hud-label px-3 py-1 bg-white/[0.03] border border-white/10 text-white/80 flex items-center gap-2 hover:border-accent/50 transition-colors">
-                <span className="w-1.5 h-1.5 bg-accent" />
-                REACT & TAILWIND CSS
+                <span className="w-1.5 h-1.5 bg-emerald-400" />
+                CLOUDFLARE R2 & NEON
               </span>
               <span className="hud-label px-3 py-1 bg-white/[0.03] border border-white/10 text-white/80 flex items-center gap-2 hover:border-accent/50 transition-colors">
                 <span className="w-1.5 h-1.5 bg-accent" />
-                NODE & EXPRESS REST APIS
+                REACT 19 & TAILWIND CSS
+              </span>
+              <span className="hud-label px-3 py-1 bg-white/[0.03] border border-white/10 text-white/80 flex items-center gap-2 hover:border-accent/50 transition-colors">
+                <span className="w-1.5 h-1.5 bg-accent" />
+                EXPRESS 5 REST APIS
               </span>
               <span className="hud-label px-3 py-1 bg-white/[0.03] border border-white/10 text-white/80 flex items-center gap-2 hover:border-accent/50 transition-colors">
                 <span className="w-1.5 h-1.5 bg-accent" />
@@ -388,9 +392,11 @@ export default function Hero({ onOpenResume }) {
                   {'    '}<span className="text-white/60">backend:</span> [<span className="text-emerald-300">"Node.js"</span>, <span className="text-emerald-300">"Express"</span>, <span className="text-emerald-300">"REST"</span>],{'\n'}
                   {'    '}<span className="text-white/60">databases:</span> [<span className="text-emerald-300">"PostgreSQL"</span>, <span className="text-emerald-300">"MongoDB"</span>],{'\n'}
                   {'    '}<span className="text-white/60">orm:</span> [<span className="text-emerald-300">"Prisma"</span>, <span className="text-emerald-300">"Mongoose"</span>],{'\n'}
-                  {'    '}<span className="text-white/60">frontend:</span> [<span className="text-emerald-300">"React"</span>, <span className="text-emerald-300">"Tailwind CSS"</span>]{'\n'}
+                  {'    '}<span className="text-white/60">frontend:</span> [<span className="text-emerald-300">"React 19"</span>, <span className="text-emerald-300">"Tailwind v4"</span>],{'\n'}
+                  {'    '}<span className="text-white/60">storage:</span> [<span className="text-emerald-300">"Cloudflare R2"</span>, <span className="text-emerald-300">"Neon DB"</span>]{'\n'}
                   {'  '}&#125;,{'\n'}
-                  {'  '}<span className="text-white/60">activeWork:</span> <span className="text-accent font-semibold">"CampusHub LMS & Taskly"</span>,{'\n'}
+                  {'  '}<span className="text-white/60">liveDeployment:</span> <span className="text-emerald-400 font-semibold">"campus-hub-delta-sooty.vercel.app"</span>,{'\n'}
+                  {'  '}<span className="text-white/60">activeWork:</span> <span className="text-accent font-semibold">"CampusHub LMS (Live) & Taskly"</span>,{'\n'}
                   {'  '}<span className="text-white/60">seeking:</span> <span className="text-emerald-400 font-semibold">"Software Engineering Internships"</span>{'\n'}
                   &#125;;
                 </code>

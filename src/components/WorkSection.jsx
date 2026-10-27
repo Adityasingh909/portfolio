@@ -128,10 +128,12 @@ function WorkCard({ project, index, onSelect }) {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="p-2 bg-accent/15 border border-accent/40 text-accent hover:bg-accent hover:text-ink transition-colors"
+                  className="px-3 py-1.5 bg-emerald-500/15 border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500 hover:text-ink transition-colors flex items-center gap-1.5 hud-label text-[10px]"
                   title="Open Live Application"
                 >
-                  <ExternalLink className="w-4 h-4" />
+                  <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
+                  <span>LIVE DEMO</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               )}
 
@@ -247,15 +249,23 @@ export default function WorkSection({ onSelectProject }) {
       },
       renderPreview: () => (
         <div className="space-y-2.5">
-          {/* Mock Course Banner */}
+          {/* Mock Course Banner with direct link */}
           <div className="bg-white/[0.05] p-3 border border-white/10 flex items-center justify-between">
             <div>
               <div className="hud-label text-[9px] text-accent font-semibold">CS301 · ACTIVE MODULE</div>
               <div className="text-white font-bold text-sm tracking-tight">Data Structures & Algorithms</div>
             </div>
-            <span className="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 hud-label text-[9px]">
-              LIVE // VERCEL
-            </span>
+            <a
+              href="https://campus-hub-delta-sooty.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="px-2.5 py-1 bg-emerald-500/20 hover:bg-emerald-500 hover:text-ink border border-emerald-500/40 text-emerald-400 hud-label text-[9px] flex items-center gap-1.5 transition-colors"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span>LIVE // VERCEL</span>
+              <ExternalLink className="w-2.5 h-2.5" />
+            </a>
           </div>
 
           {/* Sub Modules Grid */}

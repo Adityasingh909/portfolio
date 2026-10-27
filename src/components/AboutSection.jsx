@@ -119,7 +119,7 @@ export default function AboutSection({ onOpenResume }) {
                   Rather than treating software engineering as isolated syntax, I focus on how components communicate:
                   from building responsive single-page interfaces in <span className="text-white font-medium">React and Tailwind CSS</span>,
                   to engineering RESTful APIs with <span className="text-white font-medium">Node.js and Express.js</span>,
-                  to orchestrating structured schemas in <span className="text-accent font-medium">PostgreSQL via Prisma ORM</span>.
+                  to orchestrating structured schemas in <span className="text-accent font-medium">PostgreSQL via Prisma ORM and zero-egress Cloudflare R2 storage in CampusHub LMS</span>.
                 </p>
                 <p>
                   Alongside full-stack web development, I dedicate deliberate practice to{' '}
